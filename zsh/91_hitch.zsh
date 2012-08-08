@@ -5,4 +5,4 @@ hitch() {
 }
 alias unhitch='hitch -u'
 # Uncomment to persist pair info between terminal instances
-hitch
+#hitch

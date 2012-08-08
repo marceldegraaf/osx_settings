@@ -8,7 +8,7 @@
   up = pull
   br = branch
   df = diff
-  lg = log -p
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
   aa = add --all
   lol = log --pretty=oneline --abbrev-commit --graph --decorate
   unstage = reset HEAD
@@ -31,9 +31,10 @@
   renames = copies
 [diff "ruby"]
   funcname = ^ *\\(\\(class\\|module\\|def\\) .*\\)
-[push]
-  default = upstream
 [branch]
   autosetuprebase = always
 [http]
 	postBuffer = 100m
+[user]
+	name = Marcel de Graaf
+	email = mail@marceldegraaf.net
